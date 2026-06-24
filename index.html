@@ -12,7 +12,9 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- 디자인 -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css"><!-- reset 먼저 작성 -->
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/study.css">
 </head>
 <body>
     <div id="wrap">
@@ -29,7 +31,34 @@
                 <a href="#" class="today">Today<span class="num">(0)</span></a>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <!-- 1. 날짜 및 목표 리스트 -->
+            <ol class="list">
+                <li>
+                    <a href="#" class="date">05.12</a>
+                    <a href="#" class="to_do">매일 책 15분 읽기 목표</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.13</a>
+                    <a href="#" class="to_do">치과 스케일링 하기</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.14</a>
+                    <a href="#" class="to_do">5km 러닝하기</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.15</a>
+                    <a href="#" class="to_do">헬스장 가기</a>
+                </li>
+            </ol>
+            <!-- 2. 글쓰기 버튼 -->
+            <a href="#" class="write_popup_btn"><img src="./images/write_btn.svg" alt="글 작성하기"></a>
+            <!-- 3. 글쓰기 버튼 클릭 시 나오는 창 -->
+            <div class="write_popup">
+                <p class="info">add a new task.</p>
+                <a href="#" class="write_btn"><img src="./images/register_btn.svg" alt="글 등록하기"></a>
+            </div>
+        </main>
     </div><!-- e:#wrap -->
 </body>
 </html>

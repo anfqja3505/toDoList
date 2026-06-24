@@ -1,0 +1,59 @@
+/* study.css */
+
+#wrap {
+    width: 402px;
+    height: 874px;
+    background-color: greenyellow;
+    padding: 70px 15px 40px;
+}
+
+/* ================================ header 1행 */
+
+#wrap > header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+} 
+#wrap > header > .title_menu_search {}
+#wrap > header > .title_menu_search > h1 {}
+#wrap > header > .title_menu_search > h1 > a {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#wrap > header > .title_menu_search > .menu_search {}
+#wrap > header > .title_menu_search > .menu_search > .search {
+    margin-right: 12px;
+}
+#wrap > header > .title_menu_search > .menu_search > .search > img {}
+#wrap > header > .title_menu_search > .menu_search > .menu {}
+#wrap > header > .title_menu_search > .menu_search > .menu > img {}
+
+/* ================================ header 2행 */
+
+#wrap > header > nav {}
+#wrap > header > nav > .all {
+    font-size: 1.25em;
+    color: #999;
+}
+#wrap > header > nav > .all > .num {
+    color: #999;
+}
+#wrap > header > nav > .today {
+    font-size: 1.25em;
+    color: #999;
+}
+#wrap > header > nav > .today > .num {
+    color: #999;
+}
+#wrap > header > nav > .active {
+    font-weight: 700;
+    color: #000;
+}
+#wrap > header > nav > .active > .num {
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
