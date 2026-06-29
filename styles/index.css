@@ -32,7 +32,12 @@
     border-bottom: 1px solid #000;
     margin-bottom: 5px;
 }
-#wrap > header > .title_menu_search {}
+#wrap > header > .title_menu_search {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 #wrap > header > .title_menu_search > h1 {}
 #wrap > header > .title_menu_search > h1 > a { /* * 글자 꾸미기는 가장 글자에 가까운 선택자에 작성 */
     font-size: 1.5em;
@@ -74,3 +79,58 @@
     font-weight: 700;
     color: #000;
 } /* 활성화기준 대상 */ 
+/* ========================main */
+#wrap > main {}
+#wrap > main > .list {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    /* gap : 10px *//* 2개 이상의 자식 사이 바깥쪽 여백(간격) 적용(margin효과 동일) */
+/* 실제 웹&앱 서비스를 이용하는 사용자가 작성하는 내용은 항상 부모의 마지막 자식 위치로 삽입된다. 개발자가 '반전' 설정을 하지 않으면 무조건 아래로 쌓인다는 뜻. 내용이 많을수록 점점 보기 불편해지는 상황이 생기므로 축 반전을 통해 사용자가 작성한 마지막 글이 '첫 글'이 되도록 프로그래밍을 작성해야한다. */
+}
+#wrap > main > .list > li {
+    background-color: aliceblue;
+    padding: 15px 0px 15px 10px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* display: flex 외에 나머지 속성은 순서 상관 없음. */
+    flex-flow: row nowrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#wrap > main > .list > li > * {
+    font-family: 'pretendard';
+    font-size: 0.938em;
+    letter-spacing: -0.02em;
+}
+#wrap > main > .list > li > .date {
+    font-weight: 500;
+}
+#wrap > main > .list > li > .to_do {}
+/* ======================================글쓰기팝업 */
+#wrap > main > .write_popup_btn {}
+#wrap > main > .write_popup_btn > img{}
+#wrap > main > .write_popup {
+    background-color: #fff;
+    width: 331px;
+    height: 227px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+#wrap > main > .write_popup > .info {
+    font-family: 'Noto Sans KR';
+    font-size: 0.875em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+#wrap > main > .write_popup > .write_btn {
+    width: 42px;
+    height: 42px;
+    align-self: flex-end;/* 자식에게만 정렬을 하고싶을 때 사용 */
+}
+#wrap > main > .write_popup > .write_btn > img {
+    width: 100%;
+}

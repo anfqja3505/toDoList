@@ -20,7 +20,9 @@
     font-size: 1.5em;
     font-weight: 700;
 }
-#wrap > header > .title_menu_search > .menu_search {}
+#wrap > header > .title_menu_search > .menu_search {
+    
+}
 #wrap > header > .title_menu_search > .menu_search > .search {
     margin-right: 12px;
 }
