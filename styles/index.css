@@ -86,7 +86,6 @@ body {
 /* ========================main */
 #wrap > main {
     height: 95%;
-    background-color: aqua;
     overflow: auto; /* 내용이 넘친 방향만 자동으로 스크롤을 만들고 나머지는 hidden 처리 */
 }
 #wrap > main > .list {
